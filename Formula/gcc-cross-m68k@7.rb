@@ -6,6 +6,13 @@ class GccCrossM68kAT7 < Formula
 
   depends_on "binutils-cross-m68k"
   
+  # All of these are probably not needed but #3 was a case where it wouldn't
+  # build without them (maybe no previous install of platform GCC)
+  depends_on "gmp"
+  depends_on "isl"
+  depends_on "libmpc"
+  depends_on "mpfr"
+  
   def install
     # GCC will suffer build errors if forced to use a particular linker.
     ENV.delete "LD"
