@@ -1,12 +1,12 @@
 class VasmAll < Formula
   desc "vasm portable and retargetable assembler."
   homepage "http://sun.hasenbraten.de/vasm/"
-  url "http://phoenix.owl.de/tags/vasm1_8h.tar.gz"
-  version "1.8h"
-  sha256 "2b7aba9b6d0a196a2ab009fbed08f10acd94da41d11d3a224cb59b2a6c2f2b41"
+  url "http://phoenix.owl.de/tags/vasm1_8j.tar.gz"
+  version "1.8j"
+  sha256 "8b8b78091d82a92769778b2964e64c4fb98e969b46d65708dcf88f6957072676"
   
   def install
-    cpus = %w{6502 6800 arm c16x jagrisc m68k ppc qnice tr3200 vidcore x86 z80}
+    cpus = %w{6502 6800 6809 arm c16x jagrisc m68k pdp11 ppc qnice tr3200 vidcore x86 z80}
     syntaxes = %w{mot std madmac oldstyle}
 
     cpus.product(syntaxes).each do |(cpu, syntax)|
