@@ -6,7 +6,7 @@ class MameSBC < Formula
   depends_on "qt5"
 
   def install
-    make -j9 sbc64 install 
+    system 'make', '-j9', 'sbc64', 'install' 
   end
 
   test do
