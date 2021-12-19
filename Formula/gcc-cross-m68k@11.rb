@@ -1,8 +1,8 @@
-class GccCrossM68kAT1110Rc20210420 < Formula
-  desc "GNU Compiler Collection 11.1.0-RC-20210420 (Cross-compiler/m68k)"
+class GccCrossM68kAT11 < Formula
+  desc "GNU Compiler Collection 11.2.0 (Cross-compiler/m68k)"
   homepage "https://gcc.gnu.org"
-  url "https://gcc.gnu.org/pub/gcc/snapshots/11.1.0-RC-20210420/gcc-11.1.0-RC-20210420.tar.gz"
-  sha256 "e3fd6b4f35deeaf6f2a1283018bfc13b9970a2f2ef484a5c32c99417e0117dd8"
+  url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.gz"
+  sha256 "f0837f1bf8244a5cc23bd96ff6366712a791cfae01df8e25b137698aca26efc1"
 
   depends_on "binutils-cross-m68k"
   
@@ -35,7 +35,7 @@ class GccCrossM68kAT1110Rc20210420 < Formula
     ]
     
     mkdir "../build" do
-      system "../gcc-11.1.0-RC-20210420/configure", *args
+      system "../gcc-#{version}/configure", *args
       system "make", "all-gcc", "all-target-libgcc"
       system "make", "install-gcc", "install-target-libgcc"
     end
