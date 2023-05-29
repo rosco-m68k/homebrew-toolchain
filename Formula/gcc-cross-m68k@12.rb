@@ -1,5 +1,5 @@
 class GccCrossM68kAT12 < Formula
-  desc "GNU Compiler Collection 12.3.0 (Cross-compiler/m68k)"
+  desc "GNU Compiler Collection 12 (Cross-compiler/m68k)"
   homepage "https://gcc.gnu.org"
   url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-12.3.0/gcc-12.3.0.tar.gz"
   sha256 "11275aa7bb34cd8ab101d01b341015499f8d9466342a2574ece93f954d92273b"

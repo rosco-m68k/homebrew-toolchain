@@ -1,5 +1,5 @@
 class GccCrossM68kAT11 < Formula
-  desc "GNU Compiler Collection 11.4.0 (Cross-compiler/m68k)"
+  desc "GNU Compiler Collection 11 (Cross-compiler/m68k)"
   homepage "https://gcc.gnu.org"
   url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-11.4.0/gcc-11.4.0.tar.gz"
   sha256 "af828619dd1970734dda3cfb792ea3f2cba61b5a00170ba8bce4910749d73c07"
