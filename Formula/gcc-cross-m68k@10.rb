@@ -1,8 +1,8 @@
 class GccCrossM68kAT10 < Formula
-  desc "GNU Compiler Collection 10.2.0 (Cross-compiler/m68k)"
+  desc "GNU Compiler Collection 10 (Cross-compiler/m68k)"
   homepage "https://gcc.gnu.org"
-  url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz"
-  sha256 "27e879dccc639cd7b0cc08ed575c1669492579529b53c9ff27b0b96265fa867d"
+  url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-10.4.0/gcc-10.4.0.tar.gz"
+  sha256 "ab1974017834430de27fd803ade4389602a7d6ca1362496c57bef384b2a4cb07"
 
   depends_on "binutils-cross-m68k"
   

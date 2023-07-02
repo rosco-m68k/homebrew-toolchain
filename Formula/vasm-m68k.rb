@@ -1,9 +1,9 @@
 class VasmM68k < Formula
   desc "vasm portable and retargetable assembler (m68k relatives only)."
   homepage "http://sun.hasenbraten.de/vasm/"
-  url "http://phoenix.owl.de/tags/vasm1_8j.tar.gz"
-  version "1.8j"
-  sha256 "8b8b78091d82a92769778b2964e64c4fb98e969b46d65708dcf88f6957072676"
+  url "http://phoenix.owl.de/tags/vasm1_9d.tar.gz"
+  version "1.9d"
+  sha256 "0e5d4285bdca8d1db9eae4ea8061788bce603bf5c1f369f070c2218b4915c985"
   
   def install
     cpus = %w{6800 6809 m68k ppc}

@@ -1,8 +1,8 @@
-class GccCrossM68kAT11 < Formula
-  desc "GNU Compiler Collection 11 (Cross-compiler/m68k)"
+class GccCrossM68kAT12 < Formula
+  desc "GNU Compiler Collection 12 (Cross-compiler/m68k)"
   homepage "https://gcc.gnu.org"
-  url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-11.4.0/gcc-11.4.0.tar.gz"
-  sha256 "af828619dd1970734dda3cfb792ea3f2cba61b5a00170ba8bce4910749d73c07"
+  url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-12.3.0/gcc-12.3.0.tar.gz"
+  sha256 "11275aa7bb34cd8ab101d01b341015499f8d9466342a2574ece93f954d92273b"
 
   depends_on "binutils-cross-m68k"
   
