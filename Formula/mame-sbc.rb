@@ -1,7 +1,7 @@
 class MameSbc < Formula
   desc "MAME for for Single Board Computers"
-  homepage "https://github.com/mmicko/mame"
-  head "https://github.com/mmicko/mame.git"
+  homepage "https://github.com/roscopeco/mame"
+  head "https://github.com/roscopeco/mame.git"
 
   depends_on "qt5"
 
