@@ -9,6 +9,7 @@ class VasmAll < Formula
     root_url "https://homebrew.rosco-m68k.com/bottles"
     rebuild 1
     sha256 cellar: :any_skip_relocation, ventura: "1a6e59cdcb06008ef2b314abad2effd0400222b08080e30b3bd004608de43f43"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "613b154c6e02366c4e1487368e211312b546aeedc78467a28cf7e079406fb7ce"
   end
 
   def install
