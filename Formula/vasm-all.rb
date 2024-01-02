@@ -5,6 +5,12 @@ class VasmAll < Formula
   version "1.9d"
   sha256 "0e5d4285bdca8d1db9eae4ea8061788bce603bf5c1f369f070c2218b4915c985"
   
+  bottle do
+    root_url "https://homebrew.rosco-m68k.com/bottles"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura: "1a6e59cdcb06008ef2b314abad2effd0400222b08080e30b3bd004608de43f43"
+  end
+
   def install
     cpus = %w{6502 6800 6809 arm c16x jagrisc m68k pdp11 ppc qnice tr3200 vidcore x86 z80}
     syntaxes = %w{mot std madmac oldstyle}

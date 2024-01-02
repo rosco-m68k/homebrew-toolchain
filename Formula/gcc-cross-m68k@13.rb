@@ -4,6 +4,12 @@ class GccCrossM68kAT13 < Formula
   url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-13.1.0/gcc-13.1.0.tar.gz"
   sha256 "bacd4c614d8bd5983404585e53478d467a254249e0f1bb747c8bc6d787bd4fa2"
 
+  bottle do
+    root_url "https://homebrew.rosco-m68k.com/bottles"
+    rebuild 1
+    sha256 ventura: "e80446d4952fbc0ac19f867805fb120c578a0241c7b02566c924f74ae3345f45"
+  end
+
   depends_on "binutils-cross-m68k"
   
   # All of these are probably not needed but #3 was a case where it wouldn't

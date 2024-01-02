@@ -7,6 +7,7 @@ class MameSbc < Formula
     root_url "https://homebrew.rosco-m68k.com/bottles"
     rebuild 1
     sha256 cellar: :any_skip_relocation, ventura: "58454ee4772c2b1ae5d4e91c3ee6ab0d9ab8d57559dadac179ce97a837f54e5a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4d46c84901f6dbd2b6d5959b2bccf6333b9c252185c5ae5430c72f9c3da9b97c"
   end
 
   depends_on "qt5"
