@@ -8,6 +8,7 @@ class GccCrossM68kAT13 < Formula
     root_url "https://homebrew.rosco-m68k.com/bottles"
     rebuild 1
     sha256 ventura: "e80446d4952fbc0ac19f867805fb120c578a0241c7b02566c924f74ae3345f45"
+    sha256 x86_64_linux: "e02f3eeae9d3bc26243cca42f808f5614a454e26e760cae170387244fcecd8d5"
   end
 
   depends_on "binutils-cross-m68k"
