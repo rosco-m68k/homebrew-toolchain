@@ -1,13 +1,13 @@
 class MameSbc < Formula
   desc "MAME for Single Board Computers"
   homepage "https://github.com/roscopeco/mame"
-  url "https://github.com/roscopeco/mame.git", tag: 'mamerosco20240102'
-
+  url "https://github.com/roscopeco/mame.git", tag: 'mamerosco20240103'
+  
   bottle do
     root_url "https://homebrew.rosco-m68k.com/bottles"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, ventura: "58454ee4772c2b1ae5d4e91c3ee6ab0d9ab8d57559dadac179ce97a837f54e5a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4d46c84901f6dbd2b6d5959b2bccf6333b9c252185c5ae5430c72f9c3da9b97c"
+    sha256 cellar: :any, ventura: "ee94f2028ecf48c40bd5f5f916b28b6ce40203f870f3ec643c5b2996d8d657ac"
+    sha256 cellar: :any, arm64_ventura: "4c7bc1a9b42bfcbff66358e707e85a5f4470290b3aa9f22318ddf819fac1058a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7d9dc7a38b6daadfed568537db7e23b1177de99170fef8299d8d11d9de195d86"
   end
 
   depends_on "qt5"
