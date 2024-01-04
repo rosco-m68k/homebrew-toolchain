@@ -62,16 +62,32 @@ class MameSbc < Formula
 
     bin.install "sbc"
 
+    # TODO the following should really be in a post_install - do that next time we build bottles!
     system "#{bin}/sbc", '-createconfig'
     inreplace 'mamesbc.ini', /rompath\s+roms/, "rompath                   #{pkgshare}/roms;roms"
     FileUtils.cp('mamesbc.ini', 'ini/mamesbc.ini')
     pkgshare.install %w[roms ini]
+  end
 
-    ohai "NOTE: Machine ROMs installed in #{pkgshare}/roms by default"
-    ohai "A mamesbc.ini has been created for you in #{pkgshare}/ini"
-    ohai "To use this by default, create a symlink in your home directory:"
-    ohai "    mkdir -p ~/.mamesbc && ln -s #{HOMEBREW_PREFIX}/share/mame-sbc/ini/mamesbc.ini ~/.mamesbc/mamesbc.ini"
-    ohai "Alternatively, create a copy of the file if you want to edit it"
+  def caveats
+    return unless latest_version_installed?
+
+    <<~EOS
+      NOTE: Machine ROMs installed in #{pkgshare}/roms by default
+      A mamesbc.ini has been created for you in #{pkgshare}/ini
+
+      You can use this by passing the -inipath argument to sbc:
+          sbc -inipath $(brew --prefix)/share/mame-sbc/ini
+
+      Or, to use this config by default, create a symlink in your home directory:
+          mkdir -p ~/.mamesbc && ln -s #{HOMEBREW_PREFIX}/share/mame-sbc/ini/mamesbc.ini ~/.mamesbc/mamesbc.ini
+
+      If you want to edit the file, it's recommended to create a
+      copy of the file instead, or your changes will be overwritten
+      when you upgrade in future.
+
+          mkdir -p ~/.mamesbc && cp #{HOMEBREW_PREFIX}/share/mame-sbc/ini/mamesbc.ini ~/.mamesbc/mamesbc.ini
+    EOS
   end
 
   test do
