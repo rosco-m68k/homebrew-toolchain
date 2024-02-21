@@ -8,6 +8,7 @@ class MameSbc < Formula
     sha256 cellar: :any, ventura: "ee94f2028ecf48c40bd5f5f916b28b6ce40203f870f3ec643c5b2996d8d657ac"
     sha256 cellar: :any, arm64_ventura: "4c7bc1a9b42bfcbff66358e707e85a5f4470290b3aa9f22318ddf819fac1058a"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "7d9dc7a38b6daadfed568537db7e23b1177de99170fef8299d8d11d9de195d86"
+    sha256 cellar: :any, arm64_sonoma: "374b6387a8cb3415c940f8bb869ea5f141dd6242a59fe13e4ab55dce8746c4e5"
   end
 
   depends_on "qt5"
