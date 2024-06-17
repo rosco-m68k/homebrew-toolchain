@@ -1,15 +1,15 @@
 class GccCrossM68kAT13 < Formula
   desc "GNU Compiler Collection 13 (Cross-compiler/m68k)"
   homepage "https://gcc.gnu.org"
-  url "http://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-13.1.0/gcc-13.1.0.tar.gz"
-  sha256 "bacd4c614d8bd5983404585e53478d467a254249e0f1bb747c8bc6d787bd4fa2"
+  url "https://mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-13.3.0/gcc-13.3.0.tar.gz"
+  sha256 "3a2b10cab86e32358fdac871546d57e2700e9bdb5875ef33fff5b601265b9e32"
 
-  bottle do
-    root_url "https://homebrew.rosco-m68k.com/bottles"
-    rebuild 1
-    sha256 ventura: "e80446d4952fbc0ac19f867805fb120c578a0241c7b02566c924f74ae3345f45"
-    sha256 x86_64_linux: "e02f3eeae9d3bc26243cca42f808f5614a454e26e760cae170387244fcecd8d5"
-  end
+  #bottle do
+  #  root_url "https://homebrew.rosco-m68k.com/bottles"
+  #  rebuild 1
+  #  sha256 ventura: "e80446d4952fbc0ac19f867805fb120c578a0241c7b02566c924f74ae3345f45"
+  #  sha256 x86_64_linux: "e02f3eeae9d3bc26243cca42f808f5614a454e26e760cae170387244fcecd8d5"
+  #end
 
   depends_on "binutils-cross-m68k"
   
