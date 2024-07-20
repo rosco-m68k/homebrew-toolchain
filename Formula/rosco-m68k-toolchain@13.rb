@@ -16,7 +16,9 @@ class RoscoM68kToolchainAT13 < Formula
 #  end
 
   on_system :linux, macos: :ventura_or_newer do
-    depends_on "texinfo" => :build
+    depends_on "texinfo"  => :build
+    depends_on "flex"     => :build
+    depends_on "bison"    => :build
   end
 
   def install
@@ -41,6 +43,7 @@ class RoscoM68kToolchainAT13 < Formula
         *std_configure_args
 
       system "make",
+        "MAKEINFO=true",
         "-j9",
         "all-build",
         "all-binutils",
