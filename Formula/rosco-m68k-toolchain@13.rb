@@ -58,9 +58,12 @@ class RoscoM68kToolchainAT13 < Formula
         "install-binutils",
         "install-gas",
         "install-ld",
-        "install-gcc",
-        "install-target-libgcc",
-        "install-target-newlib",
+        "install-gcc"
+      system "make",
+        "install-target-libgcc"
+      system "make",
+        "install-target-newlib"
+      system "make",
         "install-target-libgloss"
     end
   end
