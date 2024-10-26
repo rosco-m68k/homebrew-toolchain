@@ -5,6 +5,14 @@ class RoscoM68kToolchainAT13 < Formula
   url "https://github.com/rosco-m68k/newlib-rosco-build/releases/download/v20241026175022/rosco-m68k-toolchain-20241026175022.tar.gz"
   sha256 "eab3ff3bce2c205cdca17a29f02c517533a964b60cb643a3cc54bef85021891c"
 
+  bottle do
+    root_url "https://homebrew.rosco-m68k.com/bottles"
+    rebuild 1
+    sha256 sonoma: "8b32ac1812c1ff4de21ad0010d510ab363be13b38084d26c840f39b42a919ef7"
+    sha256 arm64_sonoma: "e3f2c0c3dc36d58b06c8bfe874973567be13af14f7868a4e4d35c6f866287035"
+    sha256 x86_64_linux: "58188d0842662298f299740a0eb341c5965887948ecc4ce63f7994e68bd0b3f3"
+  end
+
   depends_on "gmp"
   depends_on "isl"
   depends_on "libmpc"
