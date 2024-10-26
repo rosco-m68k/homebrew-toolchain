@@ -26,7 +26,7 @@ class RoscoM68kToolchainAT13 < Formula
 
   on_system :linux, macos: :ventura_or_newer do
     depends_on "texinfo"  => :build
-    depends_on "flex"     => :build
+    depends_on "flex"
     depends_on "bison"    => :build
   end
 
