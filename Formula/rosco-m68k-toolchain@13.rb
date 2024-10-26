@@ -17,7 +17,7 @@ class RoscoM68kToolchainAT13 < Formula
   depends_on "isl"
   depends_on "libmpc"
   depends_on "mpfr"
-
+  depends_on "zstd"
   depends_on "vasm-all"
 
 #  on_sonoma :or_newer do
