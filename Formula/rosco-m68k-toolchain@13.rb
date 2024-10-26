@@ -66,6 +66,12 @@ class RoscoM68kToolchainAT13 < Formula
       system "make",
         "install-target-libgloss"
     end
+
+    system "make",
+      "-C",
+      "Xosera/copper/CopAsm"
+
+    bin.install "Xosera/copper/CopAsm/bin/xosera-copasm" => "xosera-copasm"
   end
 
   test do
