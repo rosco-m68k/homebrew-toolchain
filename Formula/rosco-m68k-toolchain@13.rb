@@ -9,7 +9,7 @@ class RoscoM68kToolchainAT13 < Formula
     root_url "https://homebrew.rosco-m68k.com/bottles"
     rebuild 1
     sha256 sonoma: "8b32ac1812c1ff4de21ad0010d510ab363be13b38084d26c840f39b42a919ef7"
-    sha256 arm64_sonoma: "e3f2c0c3dc36d58b06c8bfe874973567be13af14f7868a4e4d35c6f866287035"
+    sha256 arm64_sonoma: "748ef52f9fa967c614ac47d8f890911e06d06c4c77b83ce3c664f3ee7c4cc981"
     sha256 x86_64_linux: "58188d0842662298f299740a0eb341c5965887948ecc4ce63f7994e68bd0b3f3"
   end
 
