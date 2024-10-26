@@ -1,15 +1,16 @@
 class RoscoM68kToolchainAT13 < Formula
   desc "GCC + Newlib Toolchain for rosco_m68k"
   homepage "https://rosco-m68k.com"
-  license "GPL-3.0-only"
-  head "https://github.com/rosco-m68k/newlib-rosco-build.git", branch: "main"
+  license "GPL-3.0 and MIT"
+  url "https://github.com/rosco-m68k/newlib-rosco-build/releases/download/v20241026175022/rosco-m68k-toolchain-20241026175022.tar.gz"
+  sha256 "eab3ff3bce2c205cdca17a29f02c517533a964b60cb643a3cc54bef85021891c"
 
   depends_on "gmp"
   depends_on "isl"
   depends_on "libmpc"
   depends_on "mpfr"
 
-  depends_on "vasm-m68k" => :build
+  depends_on "vasm-all"
 
 #  on_sonoma :or_newer do
 #    fails_with :clang
@@ -22,8 +23,6 @@ class RoscoM68kToolchainAT13 < Formula
   end
 
   def install
-    system "git", "submodule", "update", "--init"
-
     system "sh", "linkem.sh"
     mkdir "build-all"
     chdir "build-all" do
