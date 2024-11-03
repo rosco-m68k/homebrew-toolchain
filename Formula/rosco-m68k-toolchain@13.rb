@@ -2,15 +2,15 @@ class RoscoM68kToolchainAT13 < Formula
   desc "GCC + Newlib Toolchain for rosco_m68k"
   homepage "https://rosco-m68k.com"
   license "GPL-3.0 and MIT"
-  url "https://github.com/rosco-m68k/newlib-rosco-build/releases/download/v20241026175022/rosco-m68k-toolchain-20241026175022.tar.gz"
-  sha256 "eab3ff3bce2c205cdca17a29f02c517533a964b60cb643a3cc54bef85021891c"
+  url "https://github.com/rosco-m68k/newlib-rosco-build/releases/download/v20241103161658/rosco-m68k-toolchain-20241103161658.tar.gz"
+  sha256 "f7230c8968d926e73386546198b5357274be4a6c93777bc6da0310679780ed79"
+
 
   bottle do
     root_url "https://homebrew.rosco-m68k.com/bottles"
-    rebuild 1
-    sha256 sonoma: "8b32ac1812c1ff4de21ad0010d510ab363be13b38084d26c840f39b42a919ef7"
-    sha256 arm64_sonoma: "748ef52f9fa967c614ac47d8f890911e06d06c4c77b83ce3c664f3ee7c4cc981"
-    sha256 x86_64_linux: "58188d0842662298f299740a0eb341c5965887948ecc4ce63f7994e68bd0b3f3"
+    sha256 sonoma: "b2ed1f9b4d8b4f9dd22d47da9ca051a216e7794d981b21a5511fa46f59ddc7ad"
+    sha256 arm64_sonoma: "5ea107243446257dfb4ace223b5e3db08a48e69567de43aee59a7ed886e507b7"
+    sha256 x86_64_linux: "f0c266c2fbadaaa2d059fb3a04a001006e3fb6b0bd640329b3259a47bd9403f6"
   end
 
   depends_on "gmp"
